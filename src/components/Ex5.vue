@@ -62,7 +62,7 @@ export default {
         <!-- Preview Section -->
         <div class="preview-section">
             <h2>Live Preview</h2>
-            <div class="preview-card"> <!-- Add code here to set background color and text color -->
+            <div class="preview-card" :style="{ backgroundColor: bgColor, color: textColor }"> <!-- Add code here to set background color and text color -->
                 <img :src="imageUrl" class="preview-img">
                 <h3>{{ name || 'Your Name' }}</h3>
                 <h4>{{ job || 'Job Title' }}</h4>
